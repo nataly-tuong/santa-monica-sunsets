@@ -148,7 +148,7 @@ main {
   }
 
   .hero-footer {
-    padding: 100px;
+    padding: 60px;
   }
 
   .hero-footer h1 {
@@ -157,5 +157,13 @@ main {
 
   .hero-footer p {
     font-size: 16px;
+  }
+
+  .blur-overlay-upwards {
+    height: 120px;
+  }
+
+  .blur-overlay-downwards {
+    height: 120px;
   }
 }
