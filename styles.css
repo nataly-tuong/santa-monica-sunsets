@@ -367,9 +367,30 @@ main {
     justify-content: space-between;
     flex-direction: row;
   }
+
+  .secondary {
+    padding: clamp(4rem, 10vw, 20rem);
+  }
+
+  .secondary h1 {
+    transform: translateX(-75%);
+  }
   .card {
     height: 20vh;
-    width: 28%;
+    transform: translateX(-150%);
+    width: 100%;
+  }
+
+  .card h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  .blur-overlay-to-left {
+    width: 10vw;
+  }
+
+  .blur-overlay-to-right {
+    width: 10vw;
   }
 }
 
