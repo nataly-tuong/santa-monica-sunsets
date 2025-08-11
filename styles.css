@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f0f0f0;
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: orange;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+#navbar-left {
+  display: flex;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+#navbar-left h2 {
+  color: white;
+}
+
+#logo {
+  width: 50px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.contact {
+  padding: 7px;
+  color: var(--primary-color);
+  border-radius: 20px;
+  background-color: white;
+  font-weight: 500;
+}
+
+main {
+  padding-top: 60px;
+}
+
+.blur-overlay-downwards {
+  background: linear-gradient(var(--primary-color), transparent);
+  position: absolute;
+  height: 150px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.blur-overlay-upwards {
+  background: linear-gradient(to top, var(--primary-color), transparent);
+  position: absolute;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hero-content {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content .hero-line {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+.slogan {
+  color: var(--secondary-color);
+}
+
+.hero-footer {
+  background-color: black;
+  color: white;
+  padding: 150px;
+}
+
+.hero-footer p {
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
