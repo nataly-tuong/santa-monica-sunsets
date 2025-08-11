@@ -86,6 +86,24 @@ main {
   width: 100%;
 }
 
+.blur-overlay-to-right {
+  background: linear-gradient(to right, var(--primary-color), transparent);
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.blur-overlay-to-left {
+  background: linear-gradient(to left, var(--primary-color), transparent);
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+
 .hero-content {
   position: relative;
   display: block;
@@ -128,7 +146,38 @@ main {
 .secondary {
   padding: 150px;
   position: relative;
+}
+
+.secondary h1 {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+  top: 10%;
   text-align: center;
+}
+
+.card {
+  position: relative;
+  width: 720px;
+  height: 200px;
+  transform: translateX(-50%);
+  top: 40%;
+  left: 50%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  position: absolute;
+  top: 10%;
+  font-size: 120px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -151,6 +200,10 @@ main {
     padding: 60px;
   }
 
+  .secondary {
+    padding: 100 60 60 60px;
+  }
+
   .hero-footer h1 {
     font-size: 25px;
   }
@@ -165,5 +218,22 @@ main {
 
   .blur-overlay-downwards {
     height: 120px;
+  }
+
+  .blur-overlay-to-left {
+    width: 100px;
+  }
+
+  .blur-overlay-to-right {
+    width: 100px;
+  }
+
+  .card {
+    width: 500px;
+  }
+
+  .card h2 {
+    font-size: 80px;
+    top: 20%;
   }
 }
