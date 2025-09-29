@@ -2,7 +2,7 @@
 
 This is a simple responsive website for a social media agency based in Santa Monica, California. It showcases services, portfolio, and contact form with smooth scrolling. Made with CSS and HTML.
 
-Live Demo: https://lykaiio.github.io/social-media-agency
+Live Demo: https://nataly-tuong.github.io/social-media-agency
 
 ---
 
